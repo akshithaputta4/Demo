@@ -13,11 +13,11 @@ public class Search {
     WebDriver driver;
 
     @Given("I open the URL")
-    public void openUrl() {
+    public void openUrl()  {
         driver=new ChromeDriver();
         driver.get("https://www.edgewordstraining.co.uk/demo-site/");
         driver.manage().window().maximize();
-        System.out.println("Page Title: " + driver.getTitle());
+        System.out.println("Page Title captured: " + driver.getTitle());
     }
 
     @When("I pass the string {string}")
