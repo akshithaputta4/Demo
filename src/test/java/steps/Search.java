@@ -30,9 +30,9 @@ public class Search {
     @Then("The  current URL should contain {string}")
     public void validateProduct(String product) {
         if (driver.getCurrentUrl().contains(product)) {
-            System.out.println("Test Passed: URL contains " + product);
+            System.out.println("Test Passed: URL" + product);
         } else {
-            System.out.println("Test Failed: URL does not contain " + product);
+            System.out.println("Test Failed: URL" + product);
         }
         driver.quit();
     }
